@@ -1,4 +1,4 @@
 dico
 ====
 
-a search engine
+may be a search engine
