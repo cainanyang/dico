@@ -11,8 +11,6 @@
     <name>Dico Parent Project</name>
 
     <modules>
-        <module>dico-command</module>
-        <module>dico-client</module>
         <module>dico-server</module>
         <module>dico-common</module>
     </modules>

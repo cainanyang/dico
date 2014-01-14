@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>  
+     <bean id="sstableController" class="org.cainanyang.dico.server.web.SSTableController">
+       <property name="sstable" ref="userfav"/>
+     </bean>
+
+     <!-- you can have more than one handler defined -->
+     <bean id="urlMapping" 
+          class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+          <property name="urlMap">
+               <map>
+                    <entry key="/sstable.x">
+                         <ref bean="sstableController" />
+                    </entry>
+               </map>
+          </property>
+     </bean>
+
+
+     <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+       <property name="resourceLoaderPath" value="/WEB-INF/vm/"/>
+     </bean>
+
+     <bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+       <property name="cache" value="true"/>
+       <property name="prefix" value=""/>
+       <property name="suffix" value=".vm"/>
+       <property name="exposeSpringMacroHelpers" value="true"/>
+     </bean>
+</beans>
