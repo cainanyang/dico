@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.cainanyang</groupId>
+        <artifactId>dico-parent</artifactId>
+        <version>1.0</version>
+    </parent>
+    <artifactId>dico-service</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Dico Service</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring</artifactId>
+            <version>2.0.7</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+        </dependency>    
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.3.175</version>
+        </dependency>
+        <dependency>
+        	<groupId>org.cainanyang</groupId>
+        	<artifactId>dico-common</artifactId>
+        	<version>1.0</version>
+        </dependency>
+    </dependencies>
+</project>

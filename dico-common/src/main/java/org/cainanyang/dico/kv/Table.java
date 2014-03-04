@@ -1,12 +1,6 @@
-package org.cainanyang.dico.common.sst;
+package org.cainanyang.dico.kv;
 
-public class SSTable {
-
-  private String name;
-
-  public SSTable() { }
-
-  public void setName(String name) { this.name = name; }
-  public String getName() { return name; }
-
+public interface Table {
+	String get(String k);
+	void put(String k, String v);
 }
