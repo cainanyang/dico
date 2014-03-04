@@ -1,4 +1,3 @@
 dico
 ====
-
-may be a search engine
+coding playground
